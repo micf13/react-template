@@ -34,7 +34,7 @@ function Hooks()
     }
 return(
         <div className="jumbotron">
-            <h1>Home Page</h1>
+            <h1>Hooks Examples</h1>
             <input type="text"  ref={userNameInput}></input><button onClick={setFocusToInputBox}>Set Username</button>
             {toggleMessage()}
 

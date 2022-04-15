@@ -6,15 +6,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  
+
 }
 html, body {
   margin: 0;
   height: 100%;
 }
-.navbarLocal {
-  font-weight: 300;
-  background: mediumseagreen;
-  color:blanchedalmond
+.container-new{
+  color: #282828;
+  background-color: white;
+  margin:20px;
+  height: 100%;
 }
 .button-grn{
   background-color: initial;
@@ -44,6 +47,10 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.container-fluid {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .dark-mode {
   background-color: #282828;
@@ -88,7 +95,7 @@ html, body {
 
 .switch-toggle input[type="checkbox"] + label::before {
   position: absolute;
-  content: 'OFF';
+  content: 'light';
   font-size: 13px;
   text-align: center;
   line-height: 25px;
@@ -103,8 +110,8 @@ html, body {
 
 .switch-toggle input[type="checkbox"]:checked + label::before {
   left: 50%;
-  content: 'ON';
-  background-color: #00b33c;
+  content: 'dark';
+  background-color: #343434;
 
 }
 

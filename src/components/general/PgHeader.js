@@ -14,24 +14,23 @@ const PgHeader = ({toggleDark}) => {
     toggleDark();
   }
   return(
-    <Navbar bg={navColour} variant={navColour} >
+    <Navbar bg={navColour} expand="lg" variant={navColour} >
       <Container>
         <Navbar.Brand as={Link} to="/">React-Template</Navbar.Brand>
-          <Nav className="navitems">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="justify-content-end flex-grow-1 pe-3">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             <Nav.Link as={Link} to="/hooks">Hooks</Nav.Link>
-        
               <div class="switch-holder">
-                  <div class="switch-label">
-                      <span>Dark Mode</span>
-                  </div>
                   <div class="switch-toggle">
                       <input type="checkbox" id="darkmode" onChange={handleChangeChk}/>
                       <label for="darkmode"></label>
                   </div>
             </div>
           </Nav>
+          </Navbar.Collapse>
       </Container>
     </Navbar>
   )
